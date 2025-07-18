@@ -20,9 +20,9 @@
     --gray-50: hsl(0, 0%, 98%);
 
     /* Font weights */
-    --font-w: 400;
-    --font-w: 500;
-    --font-w: 700;
+    --font-w-400: 400;
+    --font-w-500: 500;
+    --font-w-700: 700;
 }
 
 html,
@@ -32,4 +32,21 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: var(--font-vietnam);
+}
+
+@layer base {
+    button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        font-weight: var(--font-w-500);
+    }
+
+    a {
+        font-weight: var(--font-w-500);
+
+        &:hover {
+            color: var(--gray-950);
+        }
+    }
 }
