@@ -4,6 +4,7 @@ const Testimonial = () => {
     return (
         <section>
             <div>
+                <h2>What they've said</h2>
                 <img src="/images/avatar-ali.png" alt="avatar" />
                 <h3>Ali Bravo</h3>
                 <p>
