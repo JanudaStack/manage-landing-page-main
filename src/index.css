@@ -50,3 +50,17 @@ body {
         }
     }
 }
+
+@layer components {
+    /* Navbar */
+    header {
+        @apply flex justify-between items-center py-8 px-5 lg:px-10 z-50 w-full;
+
+        nav {
+            @apply lg:w-full;
+        }
+    }
+    .btn {
+        @apply bg-[var(--orange-400)] py-2 px-4 rounded-[2rem];
+    }
+}
