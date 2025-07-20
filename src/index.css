@@ -49,6 +49,17 @@ body {
             color: var(--gray-950);
         }
     }
+
+    h1,
+    h2,
+    h3 {
+        color: var(--blue-950);
+        font-weight: bold;
+    }
+
+    p {
+        @apply text-slate-500 text-pretty;
+    }
 }
 
 @layer components {
@@ -62,5 +73,17 @@ body {
     }
     .btn {
         @apply bg-[var(--orange-400)] py-2 px-4 rounded-[2rem];
+    }
+
+    .section-grid {
+        @apply grid grid-cols-1 lg:grid-cols-2;
+    }
+
+    .span-text {
+        @apply bg-[var(--orange-400)] py-2 px-6 rounded-[2rem] text-white;
+    }
+
+    .about-list {
+        @apply bg-orange-50 py-[.4rem] rounded-[2rem];
     }
 }

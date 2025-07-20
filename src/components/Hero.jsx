@@ -10,11 +10,11 @@ const Hero = () => {
                         alt="illus-intro-img"
                         className="w-full"
                     />
-                    <img
+                    {/* <img
                         src="/images/bg-tablet-pattern.svg"
                         alt="pattern-img"
                         className="absolute -z-50 -top-50 -right-50"
-                    />
+                    /> */}
                 </div>
                 <div className="hero-content flex flex-col gap-10 lg:-order-1 lg:mr-25 px-4">
                     <h1 className="hero-header text-[var(--blue-950)] text-2xl text-center lg:text-5xl font-bold lg:leading-14">
@@ -25,7 +25,7 @@ const Hero = () => {
                         day-to-day tasks while keeping the larger team goals in
                         view.
                     </p>
-                    <button className="btn">Get Started</button>
+                    <button className="btn mx-auto">Get Started</button>
                 </div>
             </div>
         </section>
