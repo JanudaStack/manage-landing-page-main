@@ -2,24 +2,24 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section>
-            <div className="about-content">
-                <h2 className="about-header text-2xl text-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="about-content md:px-25">
+                <h2 className="about-header text-2xl text-center md:text-4xl md:text-left">
                     What's different about Manage?
                 </h2>
-                <p className="text-center text-slate-500">
+                <p className="text-center text-slate-500 md:text-left pt-3">
                     Manage provides all the functionality your team needs,
                     without the complexity. Our software is tailor-made for
                     modern digital product teams.
                 </p>
             </div>
-            <div className="flex flex-col gap-4 pt-[4rem] px-[2rem]">
+            <div className="flex flex-col gap-4 pt-[4rem] px-[2rem] md:pt-0 md:gap-12">
                 <div>
-                    <h3 className="text-center">
+                    <h3 className="">
                         <span className="span-text">01</span>
                         Track company-wide progress
                     </h3>
-                    <p className="pt-5">
+                    <p className="pt-5 md:w-5/6">
                         See how your day-to-day tasks fit into the wider vision.
                         Go from tracking progress at the milestone level all the
                         way done to the smallest of details. Never lose sight of
@@ -39,11 +39,9 @@ const About = () => {
                     </p>
                 </div>
                 <div>
-                    <div className="flex items-center justify-center">
-                        <h3 className="text-center bg-orange-100 rounded-r-[2rem] relative h-10 ">
-                            <span className="span-text absolute top-0 -left-10">
-                                03
-                            </span>
+                    <div className="">
+                        <h3 className="">
+                            <span className="span-text">03</span>
                             Everything you need in one place
                         </h3>
                     </div>
