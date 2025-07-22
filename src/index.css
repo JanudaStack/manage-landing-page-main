@@ -69,10 +69,24 @@ body {
 
         nav {
             @apply lg:w-full;
+
+            .desktop-nav-container {
+                @apply hidden lg:flex;
+
+                .desktop-nav-links {
+                    @apply flex items-center gap-10 mx-auto;
+                }
+            }
+
+            .menu-btn {
+                @apply flex lg:hidden;
+            }
         }
     }
+
     .btn {
-        @apply bg-[var(--orange-400)] py-2 px-4 rounded-[2rem];
+        @apply bg-[var(--orange-400)] py-2 px-4 rounded-[2rem] text-white shadow-lg 
+        hover:bg-orange-400 duration-200 ease-in-out;
     }
 
     .section-grid {
@@ -80,6 +94,25 @@ body {
     }
 
     /* Hero Section */
+    .hero-grid {
+        @apply grid grid-cols-1 gap-10 justify-center md:grid-cols-2 px-[2rem] md:py-[3rem] md:px-[4rem] lg:py-[5%] lg:px-[6%] overflow-x-hidden;
+
+        .hero-bg-pattern-img {
+            @apply absolute -z-50 -top-30 md:-right-[10%] hidden md:block overflow-x-hidden;
+        }
+
+        .hero-content {
+            @apply flex flex-col gap-10 md:-order-1 md:pr-8 lg:pr-[9%];
+
+            .hero-header {
+                @apply text-[var(--blue-950)] text-2xl text-center md:text-left md:text-3xl lg:text-5xl font-bold lg:leading-14;
+            }
+
+            .hero-paragraph {
+                @apply text-center text-slate-500 md:text-left lg:text-lg lg:w-5/6;
+            }
+        }
+    }
 
     /* About Section */
     .about-content {

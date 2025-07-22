@@ -7,8 +7,8 @@ const Navbar = () => {
                 <img src="/images/logo.svg" alt="site-logo" />
             </a>
             <nav>
-                <div className="desktop-nav-links hidden lg:flex">
-                    <ul className="flex items-center gap-5 mx-auto">
+                <div className="desktop-nav-container">
+                    <ul className="desktop-nav-links">
                         <li>
                             <a href="#">Pricing</a>
                         </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </ul>
                     <button className="btn">Get Started</button>
                 </div>
-                <button className="menu-btn flex lg:hidden">
+                <button className="menu-btn">
                     <img
                         src="/images/icon-hamburger.svg"
                         alt="hamburger-icon"
