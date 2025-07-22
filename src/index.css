@@ -79,11 +79,45 @@ body {
         @apply grid grid-cols-1 lg:grid-cols-2;
     }
 
+    /* About Section */
+    .about-content {
+        @apply px-3 md:px-10 lg:px-25;
+    }
+
+    .about-header {
+        @apply text-2xl text-center md:text-4xl md:text-left;
+    }
+
+    .about-description {
+        @apply text-center text-slate-500 md:text-left pt-3;
+    }
+
+    /* About bg pattern */
+    .bg-pattern-tablet {
+        @apply relative -bottom-[10%] -left-[50%] hidden md:block lg:-left-[80%];
+    }
+
+    .about-list-content {
+        @apply flex flex-col gap-9 px-4 md:gap-12;
+    }
+
+    .list-header {
+        @apply bg-orange-50 py-[.4rem] rounded-l-[1.5rem] md:bg-transparent;
+    }
+
+    .span-number {
+        @apply bg-[var(--orange-400)] py-[.5rem] px-[1rem] rounded-[1.5rem] font-bold text-white;
+    }
+
     .span-text {
-        @apply bg-[var(--orange-400)] py-2 px-6 rounded-[2rem] text-white;
+        @apply ml-3 text-sm font-bold md:text-base lg:text-lg;
     }
 
     .about-list {
         @apply bg-orange-50 py-[.4rem] rounded-[2rem];
+    }
+
+    .about-content-p {
+        @apply pt-5 md:ml-16;
     }
 }
