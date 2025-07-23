@@ -162,7 +162,16 @@ body {
 
     /* Footer Section */
     .footer-cta {
-        @apply bg-[var(--orange-400)] py-20 px-10 flex flex-col items-center lg:justify-end lg:flex-row;
+        @apply bg-[var(--orange-400)] py-20 px-10 lg:py-[5%] flex flex-col items-center lg:justify-end lg:flex-row 
+        relative;
+
+        .bg-pattern-mobile {
+            @apply absolute top-[5%] left-0 lg:hidden;
+        }
+
+        .bg-pattern-desktop {
+            @apply hidden absolute bottom-0 lg:block;
+        }
 
         .cta-heading {
             @apply text-white text-5xl text-center lg:pr-10 lg:w-2/4 lg:text-left lg:mr-auto;
@@ -174,7 +183,7 @@ body {
     }
 
     .footer-main {
-        @apply bg-[var(--blue-950)] flex flex-col items-center gap-10 py-10 lg:flex-row lg:items-start lg:gap-0 lg:px-10;
+        @apply bg-[var(--blue-950)] z-20 flex flex-col items-center gap-10 py-10 lg:flex-row lg:items-start lg:gap-0 lg:px-10;
 
         .footer-form {
             @apply w-full flex px-10 lg:px-0 lg:order-5 lg:justify-end;

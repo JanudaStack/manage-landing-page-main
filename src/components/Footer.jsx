@@ -4,6 +4,16 @@ const Footer = () => {
     return (
         <section>
             <div className="footer-cta">
+                <img
+                    src="/images/bg-simplify-section-mobile.svg"
+                    alt="bg-pattern"
+                    className="bg-pattern-mobile"
+                />
+                <img
+                    src="/images/bg-simplify-section-desktop.svg"
+                    alt=""
+                    className="bg-pattern-desktop"
+                />
                 <h2 className="cta-heading ">
                     Simplify how your team works today.
                 </h2>
