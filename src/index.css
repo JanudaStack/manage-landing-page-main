@@ -160,6 +160,8 @@ body {
         @apply pt-5 md:ml-16;
     }
 
+    /* Testimonials Section */
+
     /* Footer Section */
     .footer-cta {
         @apply bg-[var(--orange-400)] py-20 px-10 lg:py-[5%] flex flex-col items-center lg:justify-end lg:flex-row 
