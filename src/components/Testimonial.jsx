@@ -20,35 +20,31 @@ const Testimonial = () => {
     });
 
     return (
-        <section className="flex flex-col justify-center mt-20 mb-30 gap-10 ">
-            <div className="flex flex-col items-center md:px-20 gap-10">
-                <h2 className="about-header text-2xl text-center">
-                    What they've said
-                </h2>
+        <section className="testimonial-section">
+            <div className="testimonial-wrapper">
+                <h2 className="testimonial-heading">What they've said</h2>
                 {testimonialData.map((client, index) => (
                     <div
                         key={client.id}
-                        className={`flex flex-col items-center gap-4 ${
+                        className={`testimonial-item ${
                             slideIndex === index + 1 ? 'block' : 'hidden'
                         }`}
                     >
                         <img
                             src={client.img}
                             alt="avatar"
-                            className="w-20 relative z-[999] top-15"
+                            className="testimonial-avatar"
                         />
-                        <div className="bg-[var(--gray-50)] flex flex-col gap-4 justify-center items-center pb-10 pt-20 w-3/4 lg:w-2/3">
+                        <div className="testimonial-content">
                             <h3>{client.name}</h3>
-                            <p className="px-0 text-center md:w-4/8 md:text-xl">
-                                {client.review}
-                            </p>
+                            <p className="testimonial-name">{client.review}</p>
                         </div>
 
-                        <div className="flex gap-2">
+                        <div className="testimonial-nav">
                             {testimonialData.map((_, index) => (
                                 <button
                                     key={index}
-                                    className={`w-2.5 h-2.5 border-amber-600 border-1 rounded-2xl ${
+                                    className={`testimonial-nav-button  ${
                                         slideIndex === index + 1
                                             ? 'bg-amber-600'
                                             : ''
@@ -60,7 +56,9 @@ const Testimonial = () => {
                     </div>
                 ))}
             </div>
-            <button className="btn mx-auto">Get Started</button>
+            <button className="testimonial-action btn mx-auto">
+                Get Started
+            </button>
         </section>
     );
 };
