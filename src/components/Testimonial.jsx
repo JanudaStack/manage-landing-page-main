@@ -27,7 +27,7 @@ const Testimonial = () => {
                     <div
                         key={client.id}
                         className={`testimonial-item ${
-                            slideIndex === index + 1 ? 'block' : 'hidden'
+                            slideIndex === index + 1 ? 'flex' : 'hidden'
                         }`}
                     >
                         <img
