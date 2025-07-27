@@ -82,6 +82,18 @@ body {
                 }
             }
 
+            .mobile-nav-container {
+                @apply absolute top-0 left-[10%] w-full transition-transform duration-300 ease-in-out;
+
+                .mobile-nav-links {
+                    @apply flex flex-col items-center gap-4 py-10 bg-white w-4/5 rounded-md;
+                }
+
+                .mobile-nav-links li {
+                    @apply my-2;
+                }
+            }
+
             .menu-btn {
                 @apply flex lg:hidden;
             }
@@ -152,7 +164,7 @@ body {
         }
 
         .about-content-p {
-            @apply pt-5 md:ml-16;
+            @apply mt-5 md:ml-16 md:mr-[5%] lg:mr-16;
         }
 
         .about-list {
